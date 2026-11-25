@@ -1,0 +1,40 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>A Little Something For You</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="lock" role="dialog" aria-label="Enter the passcode">
+  <div class="heart" aria-hidden="true">♥</div>
+  <div id="dots" aria-hidden="true"></div>
+  <p id="hint"></p>
+  <div id="pad"></div>
+</div>
+<div id="bloom" aria-hidden="true"><div class="half l"></div><div class="half r"></div></div>
+
+<div id="bokeh" aria-hidden="true"></div>
+<main id="stage">
+  <section class="page" id="memories" data-next="Continue ♥">
+    <div id="wall"></div>
+    <h1 class="script" id="title"></h1>
+  </section>
+  <section class="page" id="hearts" data-next="Read my letter ♥">
+    <p class="script caret" id="typed" aria-live="polite"></p>
+  </section>
+  <section class="page" id="letter" data-next="One last thing ♥">
+    <div class="paper"><h2 class="script" id="greet"></h2><p id="body"></p></div>
+  </section>
+  <section class="page" id="end" data-next="Watch it again ↺">
+    <p class="script big">Forever yours,</p>
+    <p class="script sign" id="sign"></p>
+  </section>
+</main>
+<iframe id="spotify-player" title="Play the selected Spotify track" src="https://open.spotify.com/embed/track/54KFQB6N4pn926IUUYZGzK?utm_source=generator" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+<i class="bar t"></i><i class="bar b"></i>
+<script src="script.js"></script>
+</body>
+</html>
